@@ -9,32 +9,55 @@
     }
   </style>
 </head>
+<body id="top" class="preview" data-spy="scroll" data-target=".subnav" data-offset="80" >
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container" style="width: auto;">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">Group 21 Sensor</a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li class="active"><a href="#">Sensor Readings</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+        <ul class="nav pull-right">
+          <li><a href="#"><img src="http://code.divshot.com/geo-bootstrap/img/test/hot.gif"></a></li>
+        </ul>
+      </div><!-- /.nav-collapse -->
+    </div>
+  </div><!-- /navbar-inner -->
+</div>
 <div class="container">
-<div class="navbar">
-    <div class="navbar-inner">
-      <div class="container" style="width: auto;">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-        <a class="brand" href="#">Group 21 Sensor</a>
-        <div class="nav-collapse">
-          <ul class="nav">
-            <li class="active"><a href="#">Sensor Readings</a></li>
-            <li><a href="#">Link</a></li>
-          </ul>
-        </div><!-- /.nav-collapse -->
-      </div>
-    </div><!-- /navbar-inner -->
-  </div>
+  <header class="jumbotron subhead">
+    <!--<h1>Hello from Flask</h1>-->
+    <h1>
+      <font color="#FF0000">H</font>
+      <font color="#FF5A00">e</font>
+      <font color="#FFB400">l</font>
+      <font color="#FFff00">l</font>
+      <font color="#A5ff00">o</font>
+      <font color="#FF0000"> </font>
+      <font color="#4Bff00">f</font>
+      <font color="#00ff00">r</font>
+      <font color="#FF0000">o</font>
 
-  <title>Hello from Flask</title>
+
+
+    </h1>
+  </header>
+
+
   {% if name %}
-    <h1>Hello {{ name }}!</h1>
+    <h2>Hello {{ name }}!</h2>
   {% else %}
-    <h1>Hello, World!</h1>
-  {% endif %}
+    <h2>Hello, World!</h2>
+  {% endif %} <br>
+
+
   <marquee>
     <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">
     <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">
@@ -42,3 +65,4 @@
   </marquee>
 
 </div>
+</body>
