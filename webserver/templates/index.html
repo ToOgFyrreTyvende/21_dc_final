@@ -7,12 +7,11 @@
   <!--link to emoji list = https://afeld.github.io/emoji-css/-->
   <style type="text/css" media="screen">
     html, body{
-      background: sandybrown;
+      background-image: url("https://spacejam.com/archive/spacejam/movie/img/bg_stars.gif");
     }
     .fix{
       position:fixed;
-      bottom:50px;
-      right: 35%;
+      bottom:30px;
     }
   </style>
 </head>
@@ -33,7 +32,7 @@
           <li><a href="#">Link</a></li>
         </ul>
         <ul class="nav pull-right">
-          <li><a href="https://github.com/ToOgFyrreTyvende/21_dc_final">Github<img src="http://code.divshot.com/geo-bootstrap/img/test/hot.gif"></a></li>
+          <li><a href="https://github.com/ToOgFyrreTyvende/21_dc_final">Git<img src="http://code.divshot.com/geo-bootstrap/img/test/hot.gif"></a></li>
         </ul>
       </div><!-- /.nav-collapse -->
     </div>
@@ -45,7 +44,7 @@
   <header class="jumbotron subhead">
     <!--<h1>Hello from Flask</h1>-->
     <div class="row">
-      <div class="span6">
+      <div class="span7">
         <h1>
           <span style="color:#FF0000;">H</span>
           <span style="color:#FF5A00;">e</span>
@@ -57,7 +56,8 @@
           <span style="color:#00ff00;">r</span>
           <span style="color:#00ff5A;">o</span>
           <span style="color:#00ffB4;">m</span>
-          <span style="color:#FF0000;">&nbsp;</span>
+          <span style="color:#FF0000; white-space: pre-line;">&nbsp;
+          </span>
           <span style="color:#00ffff;">g</span>
           <span style="color:#00B4ff;">r</span>
           <span style="color:#005Aff;">o</span>
@@ -69,9 +69,10 @@
           <span style="color:#FF0000;">&nbsp;</span>
           <span><i class="em em-smile"></i></span>
         </h1>
-        <p class="lead">Made by Anders, Theodor, Nicklas, Ahmad<i class="em em-dark_sunglasses"></i> and Sebastian.</p>
+        <p class="lead" style="white-space: pre-line;">Made by Anders<img src="thonk.png" style="height: 36px;width: 36px;">, Theodor<i class="em em-smirk"></i>, Nicklas<i class="em em-thinking_face"></i>,
+          Ahmad<i class="em em-egg"></i> and Sebastian<i class="em em-star-struck"></i>.</p>
     </div>
-    <div class="span6" style="text-align:center;">
+    <div class="span5" style="text-align:center;">
         <img src="http://code.divshot.com/geo-bootstrap/img/test/yahooweek.gif">
         <img src="http://code.divshot.com/geo-bootstrap/img/test/community.gif">
         <img src="http://code.divshot.com/geo-bootstrap/img/test/webtrips.gif">
@@ -98,10 +99,10 @@
 
 
 
-  <marquee style="color:red">
+  <marquee style="color:silver">
     <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">
     <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">
-    <i class="em em-confounded"></i> This is where temperature is monitored <i class="em em-sunglasses"></i>
+    <i class="em em-snowflake"></i> This is where temperature is monitored <i class="em em-sunny"></i>
     <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">
     <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">
   </marquee>
@@ -110,12 +111,45 @@
   <div class="page-header">
     <h1>Sensor Readings!!</h1>
   </div>
-  <div class="row" style="color: aquamarine">
-    The temperature is: <blink>[NULL]</blink>
+  <div class="row">
+    <div class="span12">
+    <p style="color: aquamarine">The temperature is: </p><h2><blink>[NULL]</blink></h2>
+    </div>
   </div>
 </section>
-  <div class="fix">
-    <img src="http://code.divshot.com/geo-bootstrap/img/test/construction.gif">
+  <div class="span12">
+    <div class="fix">
+      <img src="http://code.divshot.com/geo-bootstrap/img/test/construction.gif">
+    </div class="fix">
   </div>
 </div>
+
+<style type="text/css" media="screen">
+  blink {
+    -webkit-animation: 2s linear infinite condemned_blink_effect;
+  animation: 2s linear infinite condemned_blink_effect;
+  }
+  @-webkit-keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+  }
+  @keyframes condemned_blink_effect {
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+</style>
 </body>
