@@ -1,0 +1,155 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>group 21</title>
+  <link rel="stylesheet" href="http://code.divshot.com/geo-bootstrap/swatch/bootstrap.css" />
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <!--link to emoji list = https://afeld.github.io/emoji-css/-->
+  <style type="text/css" media="screen">
+    html, body{
+      background-image: url("https://spacejam.com/archive/spacejam/movie/img/bg_stars.gif");
+    }
+    .fix{
+      position:fixed;
+      bottom:30px;
+    }
+  </style>
+</head>
+
+<body id="top" class="preview" data-spy="scroll" data-target=".subnav" data-offset="80" >
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container" style="width: auto;">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="#">Group 21 Sensor</a>
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li class="active"><a href="#">Sensor Readings</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+        <ul class="nav pull-right">
+          <li><a href="https://github.com/ToOgFyrreTyvende/21_dc_final">Git<img src="http://code.divshot.com/geo-bootstrap/img/test/hot.gif"></a></li>
+        </ul>
+      </div><!-- /.nav-collapse -->
+    </div>
+  </div><!-- /navbar-inner -->
+</div>
+<br><br><br>
+
+<div class="container">
+  <header class="jumbotron subhead">
+    <!--<h1>Hello from Flask</h1>-->
+    <div class="row">
+      <div class="span7">
+        <h1>
+          <span style="color:#FF0000;">H</span>
+          <span style="color:#FF5A00;">e</span>
+          <span style="color:#FFB400;">l</span>
+          <span style="color:#FFff00;">l</span>
+          <span style="color:#A5ff00;">o</span>
+          <span style="color:#FF0000;">&nbsp;</span>
+          <span style="color:#4Bff00;">f</span>
+          <span style="color:#00ff00;">r</span>
+          <span style="color:#00ff5A;">o</span>
+          <span style="color:#00ffB4;">m</span>
+          <span style="color:#FF0000; white-space: pre-line;">&nbsp;
+          </span>
+          <span style="color:#00ffff;">g</span>
+          <span style="color:#00B4ff;">r</span>
+          <span style="color:#005Aff;">o</span>
+          <span style="color:#0000ff;">u</span>
+          <span style="color:#4B00ff;">p</span>
+          <span style="color:#FF0000;">&nbsp;</span>
+          <span style="color:#A500ff;">2</span>
+          <span style="color:#FF00ff;">1</span>
+          <span style="color:#FF0000;">&nbsp;</span>
+          <span><i class="em em-smile"></i></span>
+        </h1>
+        <p class="lead" style="white-space: pre-line;">Made by Anders<img src="thonk.png" style="height: 36px;width: 36px;">, Theodor<i class="em em-smirk"></i>, Nicklas<i class="em em-thinking_face"></i>,
+          Ahmad<i class="em em-egg"></i> and Sebastian<i class="em em-star-struck"></i>.</p>
+    </div>
+    <div class="span5" style="text-align:center;">
+        <img src="http://code.divshot.com/geo-bootstrap/img/test/yahooweek.gif">
+        <img src="http://code.divshot.com/geo-bootstrap/img/test/community.gif">
+        <img src="http://code.divshot.com/geo-bootstrap/img/test/webtrips.gif">
+      <table cellpadding="2" cellspacing="2">
+        <body><tr>
+          <td>
+            <img src="http://code.divshot.com/geo-bootstrap/img/test/ie_logo.gif">
+          </td>
+          <td>
+            <img src="http://code.divshot.com/geo-bootstrap/img/test/ns_logo.gif">
+          </td>
+          <td>
+            <img src="http://code.divshot.com/geo-bootstrap/img/test/noframes.gif">
+          </td>
+          <td>
+            <img src="http://code.divshot.com/geo-bootstrap/img/test/notepad.gif">
+          </td>
+        </tr>
+        </body>
+      </table>
+    </div>
+    </div>
+  </header>
+
+
+
+  <marquee style="color:silver">
+    <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">
+    <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">
+    <i class="em em-snowflake"></i> This is where temperature is monitored <i class="em em-sunny"></i>
+    <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">
+    <img src="http://code.divshot.com/geo-bootstrap/img/test/mchammer.gif">
+  </marquee>
+
+<section id="where-all-is" style="padding-top: 0">
+  <div class="page-header">
+    <h1>Sensor Readings!!</h1>
+  </div>
+  <div class="row">
+    <div class="span12">
+    <p style="color: aquamarine">The temperature is: </p><h2><blink>{{reading}}</blink></h2>
+    </div>
+  </div>
+</section>
+  <div class="span12">
+    <div class="fix">
+      <img src="http://code.divshot.com/geo-bootstrap/img/test/construction.gif">
+    </div class="fix">
+  </div>
+</div>
+
+<style type="text/css" media="screen">
+  blink {
+    -webkit-animation: 2s linear infinite condemned_blink_effect;
+  animation: 2s linear infinite condemned_blink_effect;
+  }
+  @-webkit-keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+  }
+  @keyframes condemned_blink_effect {
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+</style>
+</body>
